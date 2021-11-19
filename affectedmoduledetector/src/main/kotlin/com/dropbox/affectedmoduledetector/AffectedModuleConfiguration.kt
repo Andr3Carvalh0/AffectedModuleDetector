@@ -39,6 +39,8 @@ class AffectedModuleConfiguration {
 
     var specifiedBranch: String? = null
 
+    var includeUncommitted: Boolean = true
+
     var compareFrom: String = "PreviousCommit"
     set(value) {
         val commitShaProviders = listOf("PreviousCommit", "ForkCommit", "SpecifiedBranchCommit")
